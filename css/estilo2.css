@@ -1,0 +1,97 @@
+.contenedor
+{
+    background-color: olive;
+    padding: 10px;
+    font-size: 25px;
+    text-align: center;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-rows: 1fr 6fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;/*una nueva unidad, FRACCIONES*/
+    grid-template-areas: "header     header      header"
+                        "side1      contenido       side2"
+                        "footer     footer      footer"; 
+    /*en grid template areas, pone las areas en las que quereemos ocupar*/
+}
+
+.contenedor>div/*que dendro donde estan los div se modifican*/
+{
+    background-color: rgba(223, 223, 4, 0.837);
+}
+.contenedor .header
+{
+    background-color: rgba(223, 223, 4, 0.837);
+    grid-column: header;
+}
+.contenedor .side1
+{
+    background-color: rgba(223, 223, 4, 0.837);
+    grid-column: side1;
+    padding: 10px;
+    display: grid;
+    grid-gap: 10px;
+}
+.contenedor .side2
+{
+    background-color: rgba(223, 223, 4, 0.837);
+    grid-column: side2;
+    display: grid;
+    grid-gap: 10px;
+}
+.contenedor .contenido
+{
+    background-color: rgba(223, 223, 4, 0.837);
+    grid-column: contenido;
+    padding: 10px;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+
+
+
+}
+.contenedor .footer
+{
+    background-color: rgba(223, 223, 4, 0.837);
+    grid-column: footer;
+}
+.contenedor .side1 .cuadro1
+{
+    background-color: gold;
+    padding: 10px;
+
+}
+.contenedor .side1 .cuadro2
+{
+    background-color: gold;
+    padding: 10px;
+}
+.contenedor .contenido .texto1
+{
+    background-color: gold;
+    padding: 10px;
+
+}
+.contenedor .contenido .texto2
+{
+    background-color: gold;
+    padding: 10px;
+}
+.contenedor .contenido .texto3
+{
+    background-color: gold;
+    padding: 10px;
+}
+.contenedor .side2 .cuadro1
+{
+    background-color: gold;
+    padding: 10px;
+
+}
+.contenedor .side2 .cuadro2
+{
+    background-color: gold;
+    padding: 10px;
+
+}
+

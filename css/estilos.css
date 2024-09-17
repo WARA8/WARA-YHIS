@@ -1,0 +1,46 @@
+.contenedor
+{
+    background-color: olive;
+    padding: 10px;
+    font-size: 25px;
+    display: grid;
+    grid-gap: 20px;
+    /*grid-template-columns: 150px 150px 250px; /*lo ancho de las cajas*/
+    /*grid-template-rows: 150px 250px 100px 50px 20px; /*lo alto de las cajass*/
+    grid-template-columns: 3fr 8fr 3fr;/*una nueva unidad, FRACCIONES*/
+    grid-template-rows: 2fr 14fr 2fr;/*aqui se esta aplicando a 4 cajas*/
+    /*grid-template-columns: repeat(10,6fr);/*con repeat quiere decir que a las 10 cajas se les da un mismo valor para que no se repita)*/
+    /*grid-row: repeat(1,900px);/*funciona lo mismo q el anterior, PARA EL PADRE ES TEMPLATE*/
+    text-align: center;
+}
+
+.contenedor>div/*que dendro donde estan los div se modifican*/
+{
+    background-color: rgba(223, 223, 4, 0.837);
+}
+.contenedor .header
+{
+    background-color: rgba(223, 223, 4, 0.837);
+    grid-column: 1/4;/*que esa caja e,piece de la felcha que señala abajo 1 hasta el 4*/
+}
+.contenedor .side1
+{
+    background-color: rgb(168, 168, 0);
+    grid-column: 1/2;
+}
+.contenedor .contenido
+{
+    background-color: rgb(168, 168, 0);
+    grid-column: 2/3;
+
+}
+.contenedor .side2
+{
+    background-color: rgb(168, 168, 0);
+    grid-column: 3/4;
+}
+.contenedor .footer
+{
+    background-color: rgba(223, 223, 4, 0.837);
+    grid-column: 1/4;
+}
